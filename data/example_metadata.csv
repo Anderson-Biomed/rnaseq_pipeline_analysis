@@ -1,0 +1,7 @@
+sample_id,condition,tissue,batch,patient_id
+Normal_01,normal,breast,batch1,P001
+Normal_02,normal,breast,batch1,P002
+Normal_03,normal,breast,batch2,P003
+Tumor_01,tumor,breast,batch1,P001
+Tumor_02,tumor,breast,batch2,P002
+Tumor_03,tumor,breast,batch2,P003

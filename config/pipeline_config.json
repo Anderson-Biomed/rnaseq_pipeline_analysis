@@ -1,0 +1,57 @@
+{
+  "_comment": "RNAseq Pipeline Configuration. Edit values below to customize your analysis.",
+
+  "qc": {
+    "_comment": "Quality control thresholds applied before normalization.",
+    "min_count":   10,
+    "min_samples":  3,
+    "outlier_sd":   3
+  },
+
+  "normalization": {
+    "_comment": "Normalization method. Options: 'cpm' | 'tpm' | 'tmm' | 'deseq2'",
+    "method": "cpm"
+  },
+
+  "differential_expression": {
+    "_comment": "Statistical thresholds for calling differentially expressed genes (DEGs).",
+    "test_method":    "welch",
+    "padj_threshold":  0.05,
+    "lfc_threshold":   1.0
+  },
+
+  "visualizations": {
+    "_comment": "Plot settings.",
+    "top_heatmap_genes": 50,
+    "top_boxplot_genes": 12,
+    "dpi": 150,
+    "color_normal": "#2E86AB",
+    "color_tumor":  "#E84855"
+  },
+
+  "geo": {
+    "_comment": "Curated GEO datasets recommended for getting started.",
+    "recommended_datasets": [
+      {
+        "id":          "GSE47756",
+        "tissue":      "Breast",
+        "description": "Breast cancer — normal vs tumor (beginner-friendly)"
+      },
+      {
+        "id":          "GSE19804",
+        "tissue":      "Lung",
+        "description": "Lung adenocarcinoma — 60 samples"
+      },
+      {
+        "id":          "GSE14520",
+        "tissue":      "Liver",
+        "description": "Hepatocellular carcinoma — 247 samples"
+      },
+      {
+        "id":          "GSE22093",
+        "tissue":      "Colorectal",
+        "description": "Colorectal cancer — 290 samples"
+      }
+    ]
+  }
+}
